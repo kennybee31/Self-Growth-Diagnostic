@@ -1,22 +1,23 @@
 # ==============================================================================
-# 專案名稱：自我成長與壓力檢測 (Growth & Stress Diagnostic) - 最終上線版
+# 專案名稱：自我成長與壓力檢測 (Growth & Stress Diagnostic)
 # 數據來源：SAPA Project (N=2,800 真實受訪者)
+# 技術修復：明確載入 scales 與 munsell 以確保 webR 圖表渲染穩定
 # ==============================================================================
 
 library(shiny)
 library(bslib)
 library(ggplot2)
 library(psychTools)
-# 強制 Shinylive 打包底層色彩與刻度運算套件，避免 WebR 崩潰
+# 強制要求 Shinylive 打包底層色彩與刻度運算套件，避免 JS apply 錯誤
 library(scales)
 library(munsell)
 
-# 1. 數據血統精算 (N=2,800)
+# 1. 數據準備 (N=2,800 真實剖面數據)
 data(bfi)
 soul_data <- bfi[, c("C1", "C2", "C3", "C4", "C5", "N1", "N2", "N3", "N4", "N5")]
 soul_data <- na.omit(soul_data)
 
-# 計算特質均分 (Discipline: 執行引擎; Stability: 情緒冷卻系統)
+# 計算特質均分 (Discipline: 自律引擎; Stability: 穩定冷卻系統)
 soul_data$Discipline <- rowMeans(soul_data[, 1:5])
 soul_data$Stability  <- 7 - rowMeans(soul_data[, 6:10])
 
@@ -62,31 +63,28 @@ i18n <- list(
 ui <- page_fixed(
   theme = bs_theme(version = 5, bootswatch = "flatly"),
   
-  # 標題與語系切換
+  # 標題區
   div(style = "padding: 15px; background: #2c3e50; color: white; border-radius: 0 0 15px 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);",
       selectInput("lang", NULL, choices = c("繁體中文" = "zh", "English" = "en"), width = "120px"),
       uiOutput("header_ui")
   ),
   
-  # 警示語
+  # 合規聲明
   div(style = "padding: 10px; color: #e74c3c; font-size: 0.82rem; font-weight: bold; background: #fff5f5; border: 1px solid #ffcccc; margin: 15px 0; border-radius: 8px;",
       uiOutput("disclaimer_ui")
   ),
   
   layout_column_wrap(
     width = 1,
-    # 輸入區 (級距為 1，並包含刻度說明)
     card(
       uiOutput("input_ui"),
       uiOutput("scale_explanation")
     ),
     
-    # 圖表顯示區
     card(
       plotOutput("distPlot", height = "320px")
     ),
     
-    # 診斷報告區
     card(
       uiOutput("report_ui")
     )
@@ -96,12 +94,10 @@ ui <- page_fixed(
 # 4. Server 邏輯處理
 server <- function(input, output, session) {
   
-  # 動態文字綁定
   output$header_ui <- renderUI({ h3(i18n[[input$lang]]$title, style = "margin: 0; font-weight: bold;") })
   output$disclaimer_ui <- renderUI({ i18n[[input$lang]]$disclaimer })
   output$scale_explanation <- renderUI({ HTML(i18n[[input$lang]]$scale_info) })
   
-  # 刻度 1-6 之滑桿
   output$input_ui <- renderUI({
     L <- i18n[[input$lang]]
     tagList(
@@ -110,25 +106,22 @@ server <- function(input, output, session) {
     )
   })
   
-  # 診斷報告標題與內文
   output$report_ui <- renderUI({
     L <- i18n[[input$lang]]
     tagList(card_header(L$status_title), strong(textOutput("diag_text")))
   })
   
-  # 圖表繪製：熱力圖與落點標示
   output$distPlot <- renderPlot({
     L <- i18n[[input$lang]]
     
     ggplot(soul_data, aes(x = Discipline, y = Stability)) +
-      # 2D 核密度估計圖
       stat_density_2d(aes(fill = after_stat(level)), geom = "polygon", alpha = 0.8) +
       scale_fill_gradientn(colors = c("#0d0887", "#cc4678", "#f0f921")) +
       
-      # 使用者即時落點 (綠色菱形)
+      # 使用者當前落點
       geom_point(aes(x = input$u_disc, y = input$u_stab), color = "#00FF00", size = 8, shape = 18) +
       
-      # 高壓燒毀區：紅色虛線方框與標註文字
+      # 標註燒毀風險區 (Burnout Zone)
       ggplot2::annotate("rect", xmin = 4.5, xmax = 6, ymin = 1, ymax = 2.5, 
                         alpha = 0.2, fill = "white", color = "red", linetype = "dashed") +
       ggplot2::annotate("text", x = 5.25, y = 1.75, label = L$burnout_text, 
@@ -139,7 +132,6 @@ server <- function(input, output, session) {
       theme(legend.position = "none", panel.grid.minor = element_blank())
   })
   
-  # 診斷報告文字邏輯
   output$diag_text <- renderText({
     L <- i18n[[input$lang]]
     if (input$u_disc > 4.5 & input$u_stab < 2.5) return(L$fragile)
@@ -148,7 +140,5 @@ server <- function(input, output, session) {
   })
 }
 
-# ==============================================================================
-# 啟動命令
-# ==============================================================================
+# 5. 啟動命令
 shinyApp(ui = ui, server = server)
