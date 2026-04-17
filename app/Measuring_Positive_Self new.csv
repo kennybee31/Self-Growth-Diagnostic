@@ -1,0 +1,283 @@
+variable_name,description,data_type,possible_values,units
+ability_ALT_d,Behavioral Task Indicators,float,NA,NA
+ability_ALT_rt,Behavioral Task Indicators,float,NA,NA
+ability_IAT,Behavioral Task Indicators,float,NA,NA
+ability_SRET_EW,Behavioral Task Indicators,float,NA,NA
+ability_SRET_RJ1_d,Behavioral Task Indicators,float,NA,NA
+ability_SRET_RJ2_d,Behavioral Task Indicators,float,NA,NA
+ability_SRET_rt,Behavioral Task Indicators,float,NA,NA
+Ability,Item of the specified psychological scale,integer,NA,NA
+age,Participant age,categoical,NA,NA
+Attraction,Item of the specified psychological scale,integer,NA,NA
+birthday,The birthday of particitants,integer,NA,NA
+con,Experimental condition label,categoical,NA,NA
+condition,Experimental condition label,categoical,NA,NA
+conditionType,Type of experimental condition,categoical,NA,NA
+coreself_1,Item of the specified psychological scale,integer,NA,NA
+coreself_10,Item of the specified psychological scale,integer,NA,NA
+coreself_2,Item of the specified psychological scale,integer,NA,NA
+coreself_3,Item of the specified psychological scale,integer,NA,NA
+coreself_4,Item of the specified psychological scale,integer,NA,NA
+coreself_5,Item of the specified psychological scale,integer,NA,NA
+coreself_6,Item of the specified psychological scale,integer,NA,NA
+coreself_7,Item of the specified psychological scale,integer,NA,NA
+coreself_8,Item of the specified psychological scale,integer,NA,NA
+coreself_9,Item of the specified psychological scale,integer,NA,NA
+coreself_al,Item of the specified psychological scale in total,integer,NA,NA
+correct_answer,Whether the participant response was correc,binary,NA,NA
+correct_response,Whether the participant response was correc,binary,0=incorrect;1=correct,NA
+correct,Correct response for the trial,categorical,NA,NA
+CSE,Item of the specified psychological scale,integer,NA,NA
+domain_al,Item of the specified psychological scale in total,integer,NA,NA
+domain,Item of the specified psychological scale,integer,NA,NA
+education,Education level,categorical,NA,NA
+fatherEdu,Father education level,categorical,NA,NA
+FatherOccupation,Father occupation category,categorical,NA,NA
+fri_ses2,Subjective rating of the socioeconomic status of the participant's friends.,integer,NA,NA
+friend_name,Name of friends,integer,NA,NA
+gad_1,Item of the specified psychological scale,integer,NA,NA
+gad_2,Item of the specified psychological scale,integer,NA,NA
+gad_3,Item of the specified psychological scale,integer,NA,NA
+gad_4,Item of the specified psychological scale,integer,NA,NA
+gad_5,Item of the specified psychological scale,integer,NA,NA
+gad_6,Item of the specified psychological scale,integer,NA,NA
+gad_7,Item of the specified psychological scale,integer,NA,NA
+gad_al,Item of the specified psychological scale in total,integer,NA,NA
+gad,Item of the specified psychological scale,integer,NA,NA
+hsns_1,Item of the specified psychological scale,integer,NA,NA
+hsns_10,Item of the specified psychological scale,integer,NA,NA
+hsns_2,Item of the specified psychological scale,integer,NA,NA
+hsns_3,Item of the specified psychological scale,integer,NA,NA
+hsns_4,Item of the specified psychological scale,integer,NA,NA
+hsns_5,Item of the specified psychological scale,integer,NA,NA
+hsns_6,Item of the specified psychological scale,integer,NA,NA
+hsns_7,Item of the specified psychological scale,integer,NA,NA
+hsns_8,Item of the specified psychological scale,integer,NA,NA
+hsns_9,Item of the specified psychological scale,integer,NA,NA
+hsns_al,Item of the specified psychological scale in total,integer,NA,NA
+HSNS,Item of the specified psychological scale,integer,NA,NA
+IAT,Behavioral Task Indicators,float,NA,NA
+ID,Participant ID,integer,NA,NA
+identity,Unique anonymized identifier for each participant,integer,NA,NA
+IM_1,Item of the specified psychological scale,integer,NA,NA
+IM_10,Item of the specified psychological scale,integer,NA,NA
+IM_11,Item of the specified psychological scale,integer,NA,NA
+IM_12,Item of the specified psychological scale,integer,NA,NA
+IM_13,Item of the specified psychological scale,integer,NA,NA
+IM_14,Item of the specified psychological scale,integer,NA,NA
+IM_15,Item of the specified psychological scale,integer,NA,NA
+IM_16,Item of the specified psychological scale,integer,NA,NA
+IM_17,Item of the specified psychological scale,integer,NA,NA
+IM_18,Item of the specified psychological scale,integer,NA,NA
+IM_19,Item of the specified psychological scale,integer,NA,NA
+IM_2,Item of the specified psychological scale,integer,NA,NA
+IM_20,Item of the specified psychological scale,integer,NA,NA
+IM_3,Item of the specified psychological scale,integer,NA,NA
+IM_4,Item of the specified psychological scale,integer,NA,NA
+IM_5,Item of the specified psychological scale,integer,NA,NA
+IM_6,Item of the specified psychological scale,integer,NA,NA
+IM_7,Item of the specified psychological scale,integer,NA,NA
+IM_8,Item of the specified psychological scale,integer,NA,NA
+IM_9,Item of the specified psychological scale,integer,NA,NA
+IM_al,Item of the specified psychological scale in total,integer,NA,NA
+IM,Item of the specified psychological scale,integer,NA,NA
+Image,Item of the specified psychological scale,integer,NA,NA
+income,Household income level,categorical,NA,NA
+IPC_1,Item of the specified psychological scale,integer,NA,NA
+IPC_2,Item of the specified psychological scale,integer,NA,NA
+IPC_3,Item of the specified psychological scale,integer,NA,NA
+IPC_4,Item of the specified psychological scale,integer,NA,NA
+IPC_5,Item of the specified psychological scale,integer,NA,NA
+IPC_6,Item of the specified psychological scale,integer,NA,NA
+IPC_7,Item of the specified psychological scale,integer,NA,NA
+IPC_8,Item of the specified psychological scale,integer,NA,NA
+IPC_al,Item of the specified psychological scale in total,integer,NA,NA
+IPC,Item of the specified psychological scale,integer,NA,NA
+LOT_1,Item of the specified psychological scale,integer,NA,NA
+LOT_2,Item of the specified psychological scale,integer,NA,NA
+LOT_3,Item of the specified psychological scale,integer,NA,NA
+LOT_4,Item of the specified psychological scale,integer,NA,NA
+LOT_5,Item of the specified psychological scale,integer,NA,NA
+LOT_6,Item of the specified psychological scale,integer,NA,NA
+LOT_al,Item of the specified psychological scale in total,integer,NA,NA
+LOT,Item of the specified psychological scale,integer,NA,NA
+math,Distraction task,integer,NA,NA
+MI,Item of the specified psychological scale,integer,NA,NA
+moral_ALT_d,Behavioral Task Indicators,float,NA,NA
+moral_ALT_rt,Behavioral Task Indicators,float,NA,NA
+moral_IAT,Behavioral Task Indicators,float,NA,NA
+moral_SRET_EW,Behavioral Task Indicators,float,NA,NA
+moral_SRET_RJ1_d,Behavioral Task Indicators,float,NA,NA
+moral_SRET_RJ2_d,Behavioral Task Indicators,float,NA,NA
+moral_SRET_rt,Behavioral Task Indicators,float,NA,NA
+Moral,Item of the specified psychological scale,integer,NA,NA
+moralSeImag_1,Item of the specified psychological scale,integer,NA,NA
+moralSeImag_2,Item of the specified psychological scale,integer,NA,NA
+moralSeImag_3,Item of the specified psychological scale,integer,NA,NA
+moralSeImag_4,Item of the specified psychological scale,integer,NA,NA
+moralSeImag_5,Item of the specified psychological scale,integer,NA,NA
+moralSeImag_6,Item of the specified psychological scale,integer,NA,NA
+moralSeImag_7,Item of the specified psychological scale,integer,NA,NA
+moralSeImag_8,Item of the specified psychological scale,integer,NA,NA
+moralSeImag_9,Item of the specified psychological scale,integer,NA,NA
+moralSeImag_al,Item of the specified psychological scale in total,integer,NA,NA
+MorIden_1,Item of the specified psychological scale,integer,NA,NA
+MorIden_10,Item of the specified psychological scale,integer,NA,NA
+MorIden_2,Item of the specified psychological scale,integer,NA,NA
+MorIden_3,Item of the specified psychological scale,integer,NA,NA
+MorIden_4,Item of the specified psychological scale,integer,NA,NA
+MorIden_5,Item of the specified psychological scale,integer,NA,NA
+MorIden_6,Item of the specified psychological scale,integer,NA,NA
+MorIden_7,Item of the specified psychological scale,integer,NA,NA
+MorIden_8,Item of the specified psychological scale,integer,NA,NA
+MorIden_9,Item of the specified psychological scale,integer,NA,NA
+MorIden_al,Item of the specified psychological scale in total,integer,NA,NA
+motherEdu,Mother education level,categorical,NA,NA
+MotherOccupation,Mother occupation category,categorical,NA,NA
+MSI,Item of the specified psychological scale,integer,NA,NA
+national,Nationality of participant,categorical,NA,NA
+NPI_al,Item of the specified psychological scale in total,integer,NA,NA
+NPI,Item of the specified psychological scale,integer,NA,NA
+NPI1,Item of the specified psychological scale,integer,NA,NA
+NPI10,Item of the specified psychological scale,integer,NA,NA
+NPI11,Item of the specified psychological scale,integer,NA,NA
+NPI12,Item of the specified psychological scale,integer,NA,NA
+NPI13,Item of the specified psychological scale,integer,NA,NA
+NPI14,Item of the specified psychological scale,integer,NA,NA
+NPI15,Item of the specified psychological scale,integer,NA,NA
+NPI2,Item of the specified psychological scale,integer,NA,NA
+NPI3,Item of the specified psychological scale,integer,NA,NA
+NPI4,Item of the specified psychological scale,integer,NA,NA
+NPI5,Item of the specified psychological scale,integer,NA,NA
+NPI6,Item of the specified psychological scale,integer,NA,NA
+NPI7,Item of the specified psychological scale,integer,NA,NA
+NPI8,Item of the specified psychological scale,integer,NA,NA
+NPI9,Item of the specified psychological scale,integer,NA,NA
+obj_ses1,Objective socioeconomic status indicator derived from demographic variables.,float,NA,NA
+p,P-value associated with a statistical test.,float,0–1,NA
+phq_1,Item of the specified psychological scale,integer,NA,NA
+phq_2,Item of the specified psychological scale,integer,NA,NA
+phq_3,Item of the specified psychological scale,integer,NA,NA
+phq_4,Item of the specified psychological scale,integer,NA,NA
+phq_5,Item of the specified psychological scale,integer,NA,NA
+phq_6,Item of the specified psychological scale,integer,NA,NA
+phq_7,Item of the specified psychological scale,integer,NA,NA
+phq_8,Item of the specified psychological scale,integer,NA,NA
+phq_9,Item of the specified psychological scale,integer,NA,NA
+phq_al,Item of the specified psychological scale in total,integer,NA,NA
+phq,Item of the specified psychological scale,integer,NA,NA
+questionnaire,Item of the specified psychological scale,integer,NA,NA
+r,Pearson correlation coefficient between variables,float,-1 to 1,NA
+REC_ability_Negative,Behavioral Task Indicators,float,NA,NA
+REC_ability_Positive,Behavioral Task Indicators,float,NA,NA
+REC_morality_Negative,Behavioral Task Indicators,float,NA,NA
+REC_morality_Positive,Behavioral Task Indicators,float,NA,NA
+reliability,Pearson correlation coefficient between variables,float,-1 to 1,NA
+response,Participant response in the task,categorical,positive; negative,NA
+responses,Participant response in the task,categorical,yes; no; other,NA
+RSES,Item of the specified psychological scale,,NA,NA
+rt,Reaction time from stimulus onset to response,float,NA,NA
+RT,Reaction time from stimulus onset to response,float,NA,NA
+screen_id,Identifier of the experimental screen or page presented to the participant.,integer,NA,NA
+SCS,Item of the specified psychological scale,integer,NA,NA
+sde_1,Item of the specified psychological scale,integer,NA,NA
+sde_10,Item of the specified psychological scale,integer,NA,NA
+sde_11,Item of the specified psychological scale,integer,NA,NA
+sde_12,Item of the specified psychological scale,integer,NA,NA
+sde_13,Item of the specified psychological scale,integer,NA,NA
+sde_14,Item of the specified psychological scale,integer,NA,NA
+sde_15,Item of the specified psychological scale,integer,NA,NA
+sde_16,Item of the specified psychological scale,integer,NA,NA
+sde_17,Item of the specified psychological scale,integer,NA,NA
+sde_18,Item of the specified psychological scale,integer,NA,NA
+sde_19,Item of the specified psychological scale,integer,NA,NA
+sde_2,Item of the specified psychological scale,integer,NA,NA
+sde_20,Item of the specified psychological scale,integer,NA,NA
+sde_3,Item of the specified psychological scale,integer,NA,NA
+sde_4,Item of the specified psychological scale,integer,NA,NA
+sde_5,Item of the specified psychological scale,integer,NA,NA
+sde_6,Item of the specified psychological scale,integer,NA,NA
+sde_7,Item of the specified psychological scale,integer,NA,NA
+sde_8,Item of the specified psychological scale,integer,NA,NA
+sde_9,Item of the specified psychological scale,integer,NA,NA
+sde_al,Item of the specified psychological scale in total,integer,NA,NA
+SDE,Item of the specified psychological scale,integer,NA,NA
+selfclarity_1,Item of the specified psychological scale,integer,NA,NA
+selfclarity_10,Item of the specified psychological scale,integer,NA,NA
+selfclarity_11,Item of the specified psychological scale,integer,NA,NA
+selfclarity_12,Item of the specified psychological scale,integer,NA,NA
+selfclarity_2,Item of the specified psychological scale,integer,NA,NA
+selfclarity_3,Item of the specified psychological scale,integer,NA,NA
+selfclarity_4,Item of the specified psychological scale,integer,NA,NA
+selfclarity_5,Item of the specified psychological scale,integer,NA,NA
+selfclarity_6,Item of the specified psychological scale,integer,NA,NA
+selfclarity_7,Item of the specified psychological scale,integer,NA,NA
+selfclarity_8,Item of the specified psychological scale,integer,NA,NA
+selfclarity_9,Item of the specified psychological scale,integer,NA,NA
+selfclarity_al,Item of the specified psychological scale in total,integer,NA,NA
+ses_1,Item of the specified psychological scale,integer,NA,NA
+ses_10,Item of the specified psychological scale,integer,NA,NA
+ses_2,Item of the specified psychological scale,integer,NA,NA
+ses_3,Item of the specified psychological scale,integer,NA,NA
+ses_4,Item of the specified psychological scale,integer,NA,NA
+ses_5,Item of the specified psychological scale,integer,NA,NA
+ses_6,Item of the specified psychological scale,integer,NA,NA
+ses_7,Item of the specified psychological scale,integer,NA,NA
+ses_8,Item of the specified psychological scale,integer,NA,NA
+ses_9,Item of the specified psychological scale,integer,NA,NA
+ses_al,Item of the specified psychological scale in total,integer,NA,NA
+sex,Participant biological sex,categorical,NA,NA
+Sex,Participant biological sex,categorical,NA,NA
+SGPS_1,Item of the specified psychological scale,integer,NA,NA
+SGPS_2,Item of the specified psychological scale,integer,NA,NA
+SGPS_3,Item of the specified psychological scale,integer,NA,NA
+SGPS_4,Item of the specified psychological scale,integer,NA,NA
+SGPS_5,Item of the specified psychological scale,integer,NA,NA
+SGPS_6,Item of the specified psychological scale,integer,NA,NA
+SGPS_7,Item of the specified psychological scale,integer,NA,NA
+SGPS_8,Item of the specified psychological scale,integer,NA,NA
+SGPS_9,Item of the specified psychological scale,integer,NA,NA
+SGPS_al,Item of the specified psychological scale in total,integer,NA,NA
+SMT_d_ability_negative,Behavioral Task Indicators,float,NA,NA
+SMT_d_ability_positive,Behavioral Task Indicators,float,NA,NA
+SMT_d_moral_negative,Behavioral Task Indicators,float,NA,NA
+SMT_d_moral_positive,Behavioral Task Indicators,float,NA,NA
+SMT_rt_ability_negative,Behavioral Task Indicators,float,NA,NA
+SMT_rt_ability_positive,Behavioral Task Indicators,float,NA,NA
+SMT_rt_moral_negative,Behavioral Task Indicators,float,NA,NA
+SMT_rt_moral_positive,Behavioral Task Indicators,float,NA,NA
+Social,Item of the specified psychological scale,integer,NA,NA
+SOURCE_ability_Negative,Behavioral Task Indicators,float,NA,NA
+SOURCE_ability_Positive,Behavioral Task Indicators,float,NA,NA
+SOURCE_morality_Negative,Behavioral Task Indicators,float,NA,NA
+SOURCE_morality_Positive,Behavioral Task Indicators,float,NA,NA
+SRET_rt_ability_Negative,Behavioral Task Indicators,float,NA,NA
+SRET_rt_ability_Positive,Behavioral Task Indicators,float,NA,NA
+SRET_rt_morality_Negative,Behavioral Task Indicators,float,NA,NA
+SRET_rt_morality_Positive,Behavioral Task Indicators,float,NA,NA
+SRET_yes_ability_Negative,Behavioral Task Indicators,float,NA,NA
+SRET_yes_ability_Positive,Behavioral Task Indicators,float,NA,NA
+SRET_yes_morality_Negative,Behavioral Task Indicators,float,NA,NA
+SRET_yes_morality_Positive,Behavioral Task Indicators,float,NA,NA
+stimulus,Identifier of the presented stimulus,string,NA,NA
+subj_idx,Unique anonymized identifier for each participant,participant,integer,NA
+subj_name,Participant ID,integer,NA,NA
+swb_1,Item of the specified psychological scale,integer,NA,NA
+swb_2,Item of the specified psychological scale,integer,NA,NA
+swb_3,Item of the specified psychological scale,integer,NA,NA
+swb_4,Item of the specified psychological scale,integer,NA,NA
+swb_5,Item of the specified psychological scale,integer,NA,NA
+swb_al,Item of the specified psychological scale in total,integer,NA,NA
+task_id,Experimental task identifier,categorical,NA,NA
+trap1_item,Participant response to the first attention check itembinary,,0 = failed,NA
+trap2_item,Participant response to the first attention check itembinary,,1 = failed,NA
+valence,Valence of stimulus word,categorical,positive; negative,NA
+Var1,Randomization variable used to assign experimental conditions or stimulus order,integer,NA,NA
+Var2,Randomization variable used to assign experimental conditions or stimulus order,integer,NA,NA
+version_attrib,Version identifier for attribute stimuli used in the experiment,integer,NA,NA
+version_attrib2,Version identifier for attribute stimuli used in the experiment,integer,NA,NA
+version_target,Version identifier for target stimuli used in the experiment,integer,NA,NA
+version_target2,Version identifier for target stimuli used in the experiment,integer,NA,NA
+word,Word stimulus presented in the task,string,NA,NA
+Word,Word stimulus presented in the task,string,NA,NA
+Word2,Word stimulus presented in the task,string,NA,NA
