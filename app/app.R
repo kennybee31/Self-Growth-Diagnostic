@@ -7,6 +7,9 @@ library(shiny)
 library(bslib)
 library(ggplot2)
 library(psychTools)
+# 強制 Shinylive 打包底層色彩與刻度運算套件，避免 WebR 崩潰
+library(scales)
+library(munsell)
 
 # 1. 數據血統精算 (N=2,800)
 data(bfi)
@@ -98,7 +101,7 @@ server <- function(input, output, session) {
   output$disclaimer_ui <- renderUI({ i18n[[input$lang]]$disclaimer })
   output$scale_explanation <- renderUI({ HTML(i18n[[input$lang]]$scale_info) })
   
-  # 刻度 1-6 之滑桿 (Step 改為 1，並顯示 Ticks 刻度線)
+  # 刻度 1-6 之滑桿
   output$input_ui <- renderUI({
     L <- i18n[[input$lang]]
     tagList(
